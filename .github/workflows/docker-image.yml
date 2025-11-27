@@ -29,8 +29,8 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v5
         with:
-          context: ./biteback/bitebackend       # Path to your backend source
-          file: ./Dockerfile.backend
+          context: ./bite/biteback/bitebackend      # Path to your backend source
+          file: ./bite/Dockerfile.backend
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/cicd_biteproject_backend:latest
 
@@ -38,7 +38,7 @@ jobs:
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
-          context: ./bitefront      # Path to your frontend source
-          file: ./Dockerfile.frontend
+          context: ./bite/bitefront      # Path to your frontend source
+          file: ./bite/Dockerfile.frontend
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/cicd_biteproject_frontend:latest
