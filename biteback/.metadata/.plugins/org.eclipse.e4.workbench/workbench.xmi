@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_krU9Mbt-EfCPWLKTFsBZCg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_krVkQLt-EfCPWLKTFsBZCg" bindingContexts="_krVkSbt-EfCPWLKTFsBZCg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;additional-spring-configuration-metadata.json&quot; tooltip=&quot;bitebackend/src/main/resources/META-INF/additional-spring-configuration-metadata.json&quot;>&#xD;&#xA;&lt;persistable path=&quot;/bitebackend/src/main/resources/META-INF/additional-spring-configuration-metadata.json&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;SpringBootPropertyEditor&quot; name=&quot;application.properties&quot; tooltip=&quot;bitebackend/src/main/resources/application.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/bitebackend/src/main/resources/application.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;bitebackend/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/bitebackend/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;additional-spring-configuration-metadata.json&quot; tooltip=&quot;bitebackend/src/main/resources/META-INF/additional-spring-configuration-metadata.json&quot;>&#xD;&#xA;&lt;persistable path=&quot;/bitebackend/src/main/resources/META-INF/additional-spring-configuration-metadata.json&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;SpringBootPropertyEditor&quot; name=&quot;application.properties&quot; tooltip=&quot;bitebackend/src/main/resources/application.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/bitebackend/src/main/resources/application.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_krVkQLt-EfCPWLKTFsBZCg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_lRrLgbt-EfCPWLKTFsBZCg" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
@@ -253,7 +253,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_lYzHMLt-EfCPWLKTFsBZCg" elementId="org.eclipse.ui.editorss" selectedElement="_lYzHMbt-EfCPWLKTFsBZCg">
-      <children xsi:type="basic:PartStack" xmi:id="_lYzHMbt-EfCPWLKTFsBZCg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_NAMSsLuAEfCPWLKTFsBZCg">
+      <children xsi:type="basic:PartStack" xmi:id="_lYzHMbt-EfCPWLKTFsBZCg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_4vh0ELu6EfC-9fbEVbQL9g">
         <tags>EditorStack</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <children xsi:type="basic:Part" xmi:id="_NAMSsLuAEfCPWLKTFsBZCg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="application.properties" iconURI="platform:/plugin/org.springframework.tooling.boot.ls/icons/spring_obj.gif" closeable="true">
@@ -261,6 +261,12 @@
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>SpringBootPropertyEditor</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_4vh0ELu6EfC-9fbEVbQL9g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="bitebackend/pom.xml" iconURI="platform:/plugin/org.eclipse.m2e.editor/icons/editor-pom.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; partName=&quot;bitebackend/pom.xml&quot; title=&quot;bitebackend/pom.xml&quot; tooltip=&quot;bitebackend/pom.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/bitebackend/pom.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.m2e.editor.MavenPomEditor</tags>
         </children>
       </children>
     </sharedElements>
@@ -453,7 +459,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lUJ3wLt-EfCPWLKTFsBZCg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_sX7NwLuEEfC1ObkX85FeSw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ktUhcLt-EfCPWLKTFsBZCg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_WgdxoLvZEfCnzsvSPXC9iw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ktUhcLt-EfCPWLKTFsBZCg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lUJ3wbt-EfCPWLKTFsBZCg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -461,8 +467,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lUKe0Lt-EfCPWLKTFsBZCg" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_sX7NxruEEfC1ObkX85FeSw" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_ktPBxrt-EfCPWLKTFsBZCg"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_sX7Nx7uEEfC1ObkX85FeSw" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_ktQ3JLt-EfCPWLKTFsBZCg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Wge_wLvZEfCnzsvSPXC9iw" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_ktPBxrt-EfCPWLKTFsBZCg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Wge_wbvZEfCnzsvSPXC9iw" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_ktQ3JLt-EfCPWLKTFsBZCg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lUKe0bt-EfCPWLKTFsBZCg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -492,7 +498,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lUKe1bt-EfCPWLKTFsBZCg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_sYEXsLuEEfC1ObkX85FeSw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_ktT6Rbt-EfCPWLKTFsBZCg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_WggN4LvZEfCnzsvSPXC9iw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_ktT6Rbt-EfCPWLKTFsBZCg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lUKe1rt-EfCPWLKTFsBZCg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

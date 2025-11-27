@@ -53,7 +53,7 @@ public class DataSeeder implements CommandLineRunner {
         pizzaPalace.setDescription("Authentic Italian pizzas with fresh ingredients");
         pizzaPalace.setAddress("123 Main Street, City Center");
         pizzaPalace.setPhone("555-0101");
-        pizzaPalace.setImageUrl("https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&h=600&fit=crop");
+        pizzaPalace.setImageUrl("https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800");
         pizzaPalace.setRating(4.5);
         pizzaPalace.setTotalReviews(120);
         pizzaPalace.setIsActive(true);
@@ -66,7 +66,7 @@ public class DataSeeder implements CommandLineRunner {
         margherita.setDescription("Classic pizza with tomato, mozzarella, and basil");
         margherita.setPrice(299.0); // ₹299
         margherita.setCategory("Pizza");
-        margherita.setImageUrl("https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&h=600&fit=crop");
+        margherita.setImageUrl("https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800");
         margherita.setIsAvailable(true);
         margherita.setRestaurant(pizzaPalace);
         menuRepository.save(margherita);
@@ -76,7 +76,7 @@ public class DataSeeder implements CommandLineRunner {
         pepperoni.setDescription("Spicy pepperoni with mozzarella cheese");
         pepperoni.setPrice(349.0); // ₹349
         pepperoni.setCategory("Pizza");
-        pepperoni.setImageUrl("https://images.unsplash.com/photo-1628840042765-356cda07504e?w=800&h=600&fit=crop");
+        pepperoni.setImageUrl("https://images.unsplash.com/photo-1628840042765-356cda07504e?w=800");
         pepperoni.setIsAvailable(true);
         pepperoni.setRestaurant(pizzaPalace);
         menuRepository.save(pepperoni);
@@ -86,7 +86,7 @@ public class DataSeeder implements CommandLineRunner {
         veggie.setDescription("Loaded with fresh vegetables and cheese");
         veggie.setPrice(329.0); // ₹329
         veggie.setCategory("Pizza");
-        veggie.setImageUrl("https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&h=600&fit=crop");
+        veggie.setImageUrl("https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800");
         veggie.setIsAvailable(true);
         veggie.setRestaurant(pizzaPalace);
         menuRepository.save(veggie);
@@ -96,7 +96,7 @@ public class DataSeeder implements CommandLineRunner {
         garlicBread.setDescription("Freshly baked garlic bread with herbs");
         garlicBread.setPrice(149.0); // ₹149
         garlicBread.setCategory("Sides");
-        garlicBread.setImageUrl("https://images.unsplash.com/photo-1572441713132-51c75654db73?w=800&h=600&fit=crop");
+        garlicBread.setImageUrl("https://images.unsplash.com/photo-1572441713132-51c75654db73?w=800");
         garlicBread.setIsAvailable(true);
         garlicBread.setRestaurant(pizzaPalace);
         menuRepository.save(garlicBread);
@@ -106,7 +106,7 @@ public class DataSeeder implements CommandLineRunner {
         cola.setDescription("Coca Cola, Pepsi, or Sprite");
         cola.setPrice(50.0); // ₹50
         cola.setCategory("Drinks");
-        cola.setImageUrl("https://images.unsplash.com/photo-1554866585-cd94860890b7?w=800&h=600&fit=crop");
+        cola.setImageUrl("https://images.unsplash.com/photo-1554866585-cd94860890b7?w=800");
         cola.setIsAvailable(true);
         cola.setRestaurant(pizzaPalace);
         menuRepository.save(cola);
@@ -117,7 +117,7 @@ public class DataSeeder implements CommandLineRunner {
         burgerJunction.setDescription("Juicy burgers made with premium beef");
         burgerJunction.setAddress("456 Food Avenue, Downtown");
         burgerJunction.setPhone("555-0102");
-        burgerJunction.setImageUrl("https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&h=600&fit=crop");
+        burgerJunction.setImageUrl("https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800");
         burgerJunction.setRating(4.7);
         burgerJunction.setTotalReviews(95);
         burgerJunction.setIsActive(true);
@@ -130,7 +130,7 @@ public class DataSeeder implements CommandLineRunner {
         classicBurger.setDescription("Beef patty with lettuce, tomato, and special sauce");
         classicBurger.setPrice(199.0); // ₹199
         classicBurger.setCategory("Burgers");
-        classicBurger.setImageUrl("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop");
+        classicBurger.setImageUrl("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800");
         classicBurger.setIsAvailable(true);
         classicBurger.setRestaurant(burgerJunction);
         menuRepository.save(classicBurger);
@@ -140,7 +140,7 @@ public class DataSeeder implements CommandLineRunner {
         cheeseBurger.setDescription("Classic burger with melted cheese");
         cheeseBurger.setPrice(229.0); // ₹229
         cheeseBurger.setCategory("Burgers");
-        cheeseBurger.setImageUrl("https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop");
+        cheeseBurger.setImageUrl("https://images.unsplash.com/photo-1550547660-d9450f859349?w=800");
         cheeseBurger.setIsAvailable(true);
         cheeseBurger.setRestaurant(burgerJunction);
         menuRepository.save(cheeseBurger);
@@ -150,7 +150,7 @@ public class DataSeeder implements CommandLineRunner {
         baconBurger.setDescription("Burger with crispy bacon and BBQ sauce");
         baconBurger.setPrice(299.0); // ₹299
         baconBurger.setCategory("Burgers");
-        baconBurger.setImageUrl("https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop");
+        baconBurger.setImageUrl("https://images.unsplash.com/photo-1550547660-d9450f859349?w=800");
         baconBurger.setIsAvailable(true);
         baconBurger.setRestaurant(burgerJunction);
         menuRepository.save(baconBurger);
@@ -160,7 +160,7 @@ public class DataSeeder implements CommandLineRunner {
         fries.setDescription("Crispy golden fries");
         fries.setPrice(99.0); // ₹99
         fries.setCategory("Sides");
-        fries.setImageUrl("https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&h=600&fit=crop");
+        fries.setImageUrl("https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800");
         fries.setIsAvailable(true);
         fries.setRestaurant(burgerJunction);
         menuRepository.save(fries);
@@ -170,7 +170,7 @@ public class DataSeeder implements CommandLineRunner {
         shake.setDescription("Creamy chocolate milkshake");
         shake.setPrice(149.0); // ₹149
         shake.setCategory("Drinks");
-        shake.setImageUrl("https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&h=600&fit=crop");
+        shake.setImageUrl("https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800");
         shake.setIsAvailable(true);
         shake.setRestaurant(burgerJunction);
         menuRepository.save(shake);
@@ -181,7 +181,7 @@ public class DataSeeder implements CommandLineRunner {
         sushiWorld.setDescription("Fresh sushi and Japanese cuisine");
         sushiWorld.setAddress("789 Asian Street, East Side");
         sushiWorld.setPhone("555-0103");
-        sushiWorld.setImageUrl("https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop");
+        sushiWorld.setImageUrl("https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800");
         sushiWorld.setRating(4.8);
         sushiWorld.setTotalReviews(150);
         sushiWorld.setIsActive(true);
@@ -194,7 +194,7 @@ public class DataSeeder implements CommandLineRunner {
         salmonRoll.setDescription("Fresh salmon with rice and nori");
         salmonRoll.setPrice(249.0); // ₹249
         salmonRoll.setCategory("Sushi");
-        salmonRoll.setImageUrl("https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop");
+        salmonRoll.setImageUrl("https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800");
         salmonRoll.setIsAvailable(true);
         salmonRoll.setRestaurant(sushiWorld);
         menuRepository.save(salmonRoll);
@@ -204,7 +204,7 @@ public class DataSeeder implements CommandLineRunner {
         tunaRoll.setDescription("Premium tuna with avocado");
         tunaRoll.setPrice(279.0); // ₹279
         tunaRoll.setCategory("Sushi");
-        tunaRoll.setImageUrl("https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&h=600&fit=crop");
+        tunaRoll.setImageUrl("https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800");
         tunaRoll.setIsAvailable(true);
         tunaRoll.setRestaurant(sushiWorld);
         menuRepository.save(tunaRoll);
@@ -214,7 +214,7 @@ public class DataSeeder implements CommandLineRunner {
         californiaRoll.setDescription("Crab, avocado, and cucumber");
         californiaRoll.setPrice(229.0); // ₹229
         californiaRoll.setCategory("Sushi");
-        californiaRoll.setImageUrl("https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop");
+        californiaRoll.setImageUrl("https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800");
         californiaRoll.setIsAvailable(true);
         californiaRoll.setRestaurant(sushiWorld);
         menuRepository.save(californiaRoll);
@@ -224,7 +224,7 @@ public class DataSeeder implements CommandLineRunner {
         misoSoup.setDescription("Traditional Japanese miso soup");
         misoSoup.setPrice(99.0); // ₹99
         misoSoup.setCategory("Soups");
-        misoSoup.setImageUrl("https://images.unsplash.com/photo-1572441713132-51c75654db73?w=800&h=600&fit=crop");
+        misoSoup.setImageUrl("https://images.unsplash.com/photo-1572441713132-51c75654db73?w=800");
         misoSoup.setIsAvailable(true);
         misoSoup.setRestaurant(sushiWorld);
         menuRepository.save(misoSoup);
@@ -234,7 +234,7 @@ public class DataSeeder implements CommandLineRunner {
         greenTea.setDescription("Hot Japanese green tea");
         greenTea.setPrice(50.0); // ₹50
         greenTea.setCategory("Drinks");
-        greenTea.setImageUrl("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop");
+        greenTea.setImageUrl("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800");
         greenTea.setIsAvailable(true);
         greenTea.setRestaurant(sushiWorld);
         menuRepository.save(greenTea);
@@ -245,7 +245,7 @@ public class DataSeeder implements CommandLineRunner {
         tacoFiesta.setDescription("Authentic Mexican tacos and burritos");
         tacoFiesta.setAddress("321 Spice Road, West End");
         tacoFiesta.setPhone("555-0104");
-        tacoFiesta.setImageUrl("https://images.unsplash.com/photo-1565299585323-38174c03b8e1?w=800&h=600&fit=crop");
+        tacoFiesta.setImageUrl("https://images.unsplash.com/photo-1565299585323-38174c03b8e1?w=800");
         tacoFiesta.setRating(4.6);
         tacoFiesta.setTotalReviews(88);
         tacoFiesta.setIsActive(true);
@@ -258,7 +258,7 @@ public class DataSeeder implements CommandLineRunner {
         beefTaco.setDescription("Seasoned beef with lettuce, cheese, and salsa");
         beefTaco.setPrice(179.0); // ₹179
         beefTaco.setCategory("Tacos");
-        beefTaco.setImageUrl("https://images.unsplash.com/photo-1565299585323-38174c03b8e1?w=800&h=600&fit=crop");
+        beefTaco.setImageUrl("https://images.unsplash.com/photo-1565299585323-38174c03b8e1?w=800");
         beefTaco.setIsAvailable(true);
         beefTaco.setRestaurant(tacoFiesta);
         menuRepository.save(beefTaco);
@@ -268,7 +268,7 @@ public class DataSeeder implements CommandLineRunner {
         chickenTaco.setDescription("Grilled chicken with fresh veggies");
         chickenTaco.setPrice(179.0); // ₹179
         chickenTaco.setCategory("Tacos");
-        chickenTaco.setImageUrl("https://images.unsplash.com/photo-1565299585323-38174c03b8e1?w=800&h=600&fit=crop");
+        chickenTaco.setImageUrl("https://images.unsplash.com/photo-1565299585323-38174c03b8e1?w=800");
         chickenTaco.setIsAvailable(true);
         chickenTaco.setRestaurant(tacoFiesta);
         menuRepository.save(chickenTaco);
@@ -278,7 +278,7 @@ public class DataSeeder implements CommandLineRunner {
         burrito.setDescription("Large burrito with rice, beans, and beef");
         burrito.setPrice(299.0); // ₹299
         burrito.setCategory("Burritos");
-        burrito.setImageUrl("https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&h=600&fit=crop");
+        burrito.setImageUrl("https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800");
         burrito.setIsAvailable(true);
         burrito.setRestaurant(tacoFiesta);
         menuRepository.save(burrito);
@@ -288,7 +288,7 @@ public class DataSeeder implements CommandLineRunner {
         nachos.setDescription("Crispy nachos with cheese and jalapeños");
         nachos.setPrice(229.0); // ₹229
         nachos.setCategory("Sides");
-        nachos.setImageUrl("https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=800&h=600&fit=crop");
+        nachos.setImageUrl("https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=800");
         nachos.setIsAvailable(true);
         nachos.setRestaurant(tacoFiesta);
         menuRepository.save(nachos);
@@ -298,7 +298,7 @@ public class DataSeeder implements CommandLineRunner {
         horchata.setDescription("Traditional Mexican rice drink");
         horchata.setPrice(79.0); // ₹79
         horchata.setCategory("Drinks");
-        horchata.setImageUrl("https://images.unsplash.com/photo-1554866585-cd94860890b7?w=800&h=600&fit=crop");
+        horchata.setImageUrl("https://images.unsplash.com/photo-1554866585-cd94860890b7?w=800");
         horchata.setIsAvailable(true);
         horchata.setRestaurant(tacoFiesta);
         menuRepository.save(horchata);

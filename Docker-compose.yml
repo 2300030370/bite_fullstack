@@ -1,0 +1,63 @@
+version: "3.9"
+
+services:
+  # -----------------------------
+  # MySQL Database
+  # -----------------------------
+  db:
+    image: mysql:8.0
+    container_name: bite-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bite_data
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # -----------------------------
+  # Spring Boot Backend
+  # -----------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: bite-backend
+    ports:
+      - "8081:8081"   # host:container
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/bite_data?autoReconnect=true&connectTimeout=30000&socketTimeout=60000&allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # -----------------------------
+  # Frontend (React / Angular / Vue)
+  # -----------------------------
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: bite-frontend
+    environment:
+    - REACT_APP_API_URL=http://backend:8081/api
+    ports:
+      - "3000:8080"
+    depends_on:
+      - backend
+
+# -----------------------------
+# Persistent volume for MySQL data
+# -----------------------------
+volumes:
+  db_data:
